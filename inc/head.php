@@ -60,7 +60,7 @@
       if (empty($_SESSION['loginname']))
       {$phrase='Hello Wilder!';}
       ?>
-      <strong><?=$phrase?></strong>
+      <strong><?=$phrase;?></strong>
 
   </div>
 </header>

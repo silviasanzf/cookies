@@ -1,23 +1,27 @@
+<?php
+session_start();
 
-<?php require 'inc/head.php'; ?>
+
+require 'inc/head.php'; ?>
+
 <section class="cookies container-fluid">
     <div class="row">
 
 
-        <div class="col-4">
-            <div class="card" style="width:18rem">
-                <img class="card-img-top" src=" " alt="Card image cap" >
-                <div class="card-body">
-                    <h5 class="card-title">Card title</h5>
-                    <p class="card-text"></p>
-
-                </div>
-            </div>
 
 
+        <p>Pecan nuts : Nombre dans votre panier:<?php echo $_SESSION['Pecan_nuts'];?></p>
 
 
-        TODO : Display shopping cart items from $_SESSION here.
+        <p>Chocolate chips : Nombre dans votre panier:<?php echo $_SESSION['chocolate_chips'];?></p>
+
+        <p>Chocolate cookie : Nombre dans votre panier:<?php echo $_SESSION['Chocolate_cookie'];?></p>
+
+
+        <p>MM's cookies : Nombre dans votre panier: <?php echo $_SESSION['MMs_cookies'];?></p>
+
+
+
     </div>
 </section>
 <?php require 'inc/foot.php'; ?>
